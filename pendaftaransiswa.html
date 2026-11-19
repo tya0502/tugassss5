@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="proses.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <Legend>Pendaftaran Siswa</Legend> 
+             <label for="nama">Nama lengkap:</label><br> 
+             <input type="text" id="nama" name="nama" placeholder="Masukan Nama Lengkap"required><br><br>
+             
+       <label for="Nis">NIS:</label><br> 
+             <input type="text" id="NIS name="NIS" placeholder="Masukan NIS"required><br><br>
+             <label>jenis Kelamin</label><br>
+             <input type="radio" id="jk_1" name="name" value="Laki-laki"required>
+             <label for="jk_1">Laki-laki</label><br>
+            <input type="radio" id="jk_1" name="name" value="Perempuan"required>
+            <label for="jk_1">Perempuan</label><br><br>
+            <input type="datetime-local" name="jadwal"/><br><br>
+
+            <label for="jurusan">Pilihan Jurusan:</label><br>
+            <select id="jurusan" name="jurusan" required>
+            <option value="">- Pilih Jurusan</option>
+            <option value="RPL">Rekayasa Perangkat Lunak (RPL)</option>
+            <option value="PPLG">Pengembangan Perangkat Lunak dan GIM (PPLG)</option>
+            <option value="TKJ">Teknik Komputer & Jaringan (TK3)</option>
+            </select><br><br>
+            <label for="alamat">Alamat lengkap</label><br>
+            <textarea id="alamat" name="alamat" rows="4" cols="40" placeholder="Tuliskan alamat lengkap anda..."></textarea><br><br>
+           
+            <label for="foto">Foto:</label>
+            <input type="file" name="foto"/><br><br>
+
+           
+         <input type="checkbox" id="chek" name="chek[]" value="Saya metujui data yang saya masukan"> Saya metujui data yang saya masukan <br><br>
+        <button type="Daftar">daftar</button>
+         <input type="reset" value="Reset"/>
+        </fieldset>
+    </form>
+</body>
+</html>
